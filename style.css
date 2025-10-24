@@ -101,7 +101,9 @@ main .bc-img .view1 .bottom .btn button {
   main .bc-img {
     background: url(Image/Image2.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 10%;
+    background-position: center top;
+    animation: mysun 1s linear forwards 1;
   }
   main .bc-img .img2 {
     display: block;
@@ -186,5 +188,22 @@ main .bc-img .view1 .bottom .btn button {
   }
   100% {
     transform: translateY(-68%);
+  }
+}
+@keyframes mysun {
+  0% {
+    background-size: 10%;
+  }
+  25% {
+    background-size: 30%;
+  }
+  50% {
+    background-size: 50%;
+  }
+  75% {
+    background-size: 80%;
+  }
+  100% {
+    background-size: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
