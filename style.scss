@@ -21,9 +21,12 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
+    section{
+        max-width: 1900px;
+    }
 
-    .bc-img{
         .img4{
             width: 100%;
         }
@@ -113,7 +116,173 @@ main{
             }
         }
     }
-}
+
+     .view2{
+        background: url(Image/image5.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+        padding: 0rem 1rem;
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            padding-top: 10rem;
+
+            .btn{
+                display: flex;
+                justify-content: center;
+
+                button{
+                    padding: 0.7rem 2rem;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    border-radius: 2rem;
+                    color: white;
+                }
+            }
+
+            .heading{
+                display: flex;
+                justify-content: center;
+                h1{
+                    color: white;
+                    font-family: 'light';
+                    width: 80%;
+                    text-align: center;
+                    font-size: 2.5rem;
+                }
+            }
+
+            .text{
+                display: flex;
+                justify-content: center;
+                p{
+                    color: #7b7d82;
+                    width: 90%;
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .bottom-last{
+            background: url(Image/image6.svg);
+            background-size: contain;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .view3{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+
+        .title{
+            p{
+                text-transform: uppercase;
+                color: #7b7d82;
+            }
+        }
+
+        .heading{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            h1{
+                font-family: 'light';
+                font-size: 1.5rem;  
+            }
+
+            p{
+                color: #7b7d82;
+                font-size: 1.2rem;
+                width: 80%;
+            }
+        }
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: space-evenly;
+            gap: 1.5rem;
+            .toparea{
+                width: 100%;
+                display: flex;
+                padding: 1rem 0rem;
+                justify-content: space-around;
+                gap: 1.5rem;
+
+                .points1{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    h1{
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .points2{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    h1{
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .bottomarea{
+ width: 100%;
+                display: flex;
+                padding: 1rem 0rem;
+                justify-content: space-around;
+                gap: 1.5rem;
+
+                .points3{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    h1{
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .points4{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    h1{
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -121,18 +290,22 @@ main{
 @media (min-width: 800px) {
     main{
 
-        .bc-img{
+        .bg-img{
         background: url(Image/Image2.svg);
         background-repeat: no-repeat;
         background-size: 10%;
-        background-position: center top;
-        animation: mysun 1s linear forwards 1;
+        background-position: center top -150px;
+        animation: mysun 0s linear forwards 1;
+        background-size: contain;
+        }
             .img2{
                 display: block;
             }
 
             .img4{
+                position: absolute;
                 animation: myanimation 0s linear forwards 1;
+                max-width: 1900px;
             }
 
         header{
@@ -156,6 +329,7 @@ main{
                 gap: 2rem;
                 color: white;
                 font-size: 1.3rem;
+                text-align: center;
 
                 .docs{
                     display: flex;
@@ -197,7 +371,7 @@ main{
             justify-content: center;
             .top{
                 img{
-                    margin-top: 10rem;
+                    margin-top: 12rem;
                     width: 8rem;
                 }
             }
@@ -207,40 +381,58 @@ main{
                 .title{
                     h1{
                         color: #0A0A0B;
+                        font-size: 5rem;
                     }
                 }
 
                 .text{
-                    font-weight: 100;
+                    font-weight: 200;
                     p{
                         color: #0A0A0B;
+                        font-size: 2rem;
                     }
                 }
 
                 .btn{
                     button{
-                        font-size: 1rem;
+                        padding: 1.5rem 3rem;
+                        font-size: 1.3rem;
                         background-color: #0A0A0B;
                         color: white;
                     }
                 }
             }
         }
+
+        .view2{
+            background-size:contain;
+            background-position-y: top;
+            margin-top: 20rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            .bottom-last{
+                width: 65%;
+            }
     }
+
     }
 }
 
 
 @keyframes myanimation {
-    0% {transform: translateY(0%);}
-    100% {transform: translateY(-68%);}
+    0% {top: 100%;};
+    25% {top: 70%;};
+    50% {top: 30%;};
+    100% {top: 15%;};
 }
-
 
 @keyframes mysun {
     0% {background-size: 10%;}
     25% {background-size: 30%;}
     50% {background-size: 50%;}
     75% {background-size: 80%;}
-    100% {background-size: 80%;}
+    100% {background-size: 105%;}
 }

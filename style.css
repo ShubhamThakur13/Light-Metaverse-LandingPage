@@ -20,75 +20,79 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-main .bc-img .img4 {
+main section {
+  max-width: 1900px;
+}
+main .img4 {
   width: 100%;
 }
-main .bc-img .img5 {
+main .img5 {
   width: 100%;
 }
-main .bc-img header {
+main header {
   width: 100%;
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
 }
-main .bc-img header .logo {
+main header .logo {
   display: flex;
   align-items: center;
   gap: 0.4rem;
 }
-main .bc-img header .logo img {
+main header .logo img {
   width: 2rem;
 }
-main .bc-img header .logo p {
+main header .logo p {
   color: white;
   font-size: 1.6rem;
   font-weight: 100;
 }
-main .bc-img header .mid, main .bc-img header .bottom {
+main header .mid, main header .bottom {
   display: none;
 }
-main .bc-img .view1 {
+main .view1 {
   width: 100%;
   padding: 2rem 1rem;
   display: flex;
   gap: 2rem;
   flex-direction: column;
 }
-main .bc-img .view1 .top {
+main .view1 .top {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-main .bc-img .view1 .top img {
+main .view1 .top img {
   margin-top: 3rem;
   width: 7rem;
 }
-main .bc-img .view1 .bottom {
+main .view1 .bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.3rem;
 }
-main .bc-img .view1 .bottom .title h1 {
+main .view1 .bottom .title h1 {
   color: white;
   font-size: 3rem;
   text-align: center;
   font-family: "light";
 }
-main .bc-img .view1 .bottom .text {
+main .view1 .bottom .text {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-main .bc-img .view1 .bottom .text p {
+main .view1 .bottom .text p {
   color: white;
   width: 70%;
   text-align: center;
   font-size: 1.3rem;
 }
-main .bc-img .view1 .bottom .btn button {
+main .view1 .bottom .btn button {
   padding: 1rem 2rem;
   border-radius: 5rem;
   display: flex;
@@ -96,57 +100,209 @@ main .bc-img .view1 .bottom .btn button {
   gap: 0.4rem;
   border: none;
 }
+main .view2 {
+  background: url(Image/image5.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  padding: 0rem 1rem;
+}
+main .view2 .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  padding-top: 10rem;
+}
+main .view2 .bottom .btn {
+  display: flex;
+  justify-content: center;
+}
+main .view2 .bottom .btn button {
+  padding: 0.7rem 2rem;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 2rem;
+  color: white;
+}
+main .view2 .bottom .heading {
+  display: flex;
+  justify-content: center;
+}
+main .view2 .bottom .heading h1 {
+  color: white;
+  font-family: "light";
+  width: 80%;
+  text-align: center;
+  font-size: 2.5rem;
+}
+main .view2 .bottom .text {
+  display: flex;
+  justify-content: center;
+}
+main .view2 .bottom .text p {
+  color: #7b7d82;
+  width: 90%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+main .view2 .bottom-last {
+  background: url(Image/image6.svg);
+  background-size: contain;
+}
+main .view2 .bottom-last img {
+  width: 100%;
+}
+main .view3 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .view3 .title p {
+  text-transform: uppercase;
+  color: #7b7d82;
+}
+main .view3 .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .view3 .heading h1 {
+  font-family: "light";
+  font-size: 1.5rem;
+}
+main .view3 .heading p {
+  color: #7b7d82;
+  font-size: 1.2rem;
+  width: 80%;
+}
+main .view3 .text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
+main .view3 .text .toparea {
+  width: 100%;
+  display: flex;
+  padding: 1rem 0rem;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+main .view3 .text .toparea .points1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view3 .text .toparea .points1 h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+main .view3 .text .toparea .points1 p {
+  font-size: 1.2rem;
+}
+main .view3 .text .toparea .points2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view3 .text .toparea .points2 h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+main .view3 .text .toparea .points2 p {
+  font-size: 1.2rem;
+}
+main .view3 .text .bottomarea {
+  width: 100%;
+  display: flex;
+  padding: 1rem 0rem;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+main .view3 .text .bottomarea .points3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view3 .text .bottomarea .points3 h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+main .view3 .text .bottomarea .points3 p {
+  font-size: 1.2rem;
+}
+main .view3 .text .bottomarea .points4 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view3 .text .bottomarea .points4 h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+main .view3 .text .bottomarea .points4 p {
+  font-size: 1.2rem;
+}
 
 @media (min-width: 800px) {
-  main .bc-img {
+  main .bg-img {
     background: url(Image/Image2.svg);
     background-repeat: no-repeat;
     background-size: 10%;
-    background-position: center top;
-    animation: mysun 1s linear forwards 1;
+    background-position: center top -150px;
+    animation: mysun 0s linear forwards 1;
+    background-size: contain;
   }
-  main .bc-img .img2 {
+  main .img2 {
     display: block;
   }
-  main .bc-img .img4 {
+  main .img4 {
+    position: absolute;
     animation: myanimation 0s linear forwards 1;
+    max-width: 1900px;
   }
-  main .bc-img header {
+  main header {
     justify-content: space-evenly;
   }
-  main .bc-img header .logo img {
+  main header .logo img {
     width: 3rem;
   }
-  main .bc-img header .logo p {
+  main header .logo p {
     font-size: 2rem;
   }
-  main .bc-img header .mid, main .bc-img header .bottom {
+  main header .mid, main header .bottom {
     display: block;
   }
-  main .bc-img header .mid {
+  main header .mid {
     display: flex;
     gap: 2rem;
     color: white;
     font-size: 1.3rem;
+    text-align: center;
   }
-  main .bc-img header .mid .docs {
+  main header .mid .docs {
     display: flex;
     gap: 0.3rem;
     align-items: center;
   }
-  main .bc-img header .bottom {
+  main header .bottom {
     display: flex;
     align-items: center;
     gap: 1.5rem;
   }
-  main .bc-img header .bottom span {
+  main header .bottom span {
     color: white;
     display: flex;
     gap: 0.3rem;
     font-size: 1.3rem;
     align-items: center;
   }
-  main .bc-img header .bottom button {
+  main header .bottom button {
     padding: 0.8rem 2rem;
     display: flex;
     gap: 0.5rem;
@@ -155,39 +311,59 @@ main .bc-img .view1 .bottom .btn button {
     border-radius: 0.7rem;
     border: none;
   }
-  main .bc-img .view1 {
+  main .view1 {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  main .bc-img .view1 .top img {
-    margin-top: 10rem;
+  main .view1 .top img {
+    margin-top: 12rem;
     width: 8rem;
   }
-  main .bc-img .view1 .bottom {
+  main .view1 .bottom {
     gap: 2rem;
   }
-  main .bc-img .view1 .bottom .title h1 {
+  main .view1 .bottom .title h1 {
     color: #0A0A0B;
+    font-size: 5rem;
   }
-  main .bc-img .view1 .bottom .text {
-    font-weight: 100;
+  main .view1 .bottom .text {
+    font-weight: 200;
   }
-  main .bc-img .view1 .bottom .text p {
+  main .view1 .bottom .text p {
     color: #0A0A0B;
+    font-size: 2rem;
   }
-  main .bc-img .view1 .bottom .btn button {
-    font-size: 1rem;
+  main .view1 .bottom .btn button {
+    padding: 1.5rem 3rem;
+    font-size: 1.3rem;
     background-color: #0A0A0B;
     color: white;
+  }
+  main .view2 {
+    background-size: contain;
+    background-position-y: top;
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .view2 .bottom-last {
+    width: 65%;
   }
 }
 @keyframes myanimation {
   0% {
-    transform: translateY(0%);
+    top: 100%;
+  }
+  25% {
+    top: 70%;
+  }
+  50% {
+    top: 30%;
   }
   100% {
-    transform: translateY(-68%);
+    top: 15%;
   }
 }
 @keyframes mysun {
@@ -204,6 +380,6 @@ main .bc-img .view1 .bottom .btn button {
     background-size: 80%;
   }
   100% {
-    background-size: 80%;
+    background-size: 105%;
   }
 }/*# sourceMappingURL=style.css.map */
