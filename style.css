@@ -8,7 +8,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   background-color: #0A0A0B;
@@ -50,7 +51,8 @@ main header .logo p {
   font-size: 1.6rem;
   font-weight: 100;
 }
-main header .mid, main header .bottom {
+main header .mid,
+main header .bottom {
   display: none;
 }
 main .view1 {
@@ -154,102 +156,323 @@ main .view2 .bottom-last {
 main .view2 .bottom-last img {
   width: 100%;
 }
-main .view3 {
+main .half-sun {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: hidden;
+}
+main .half-sun .side,
+main .half-sun .left-side {
+  display: none;
+}
+main .half-sun .view3 {
   color: white;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
 }
-main .view3 .title p {
+main .half-sun .view3 .top {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .half-sun .view3 .top .title p {
   text-transform: uppercase;
   color: #7b7d82;
 }
-main .view3 .heading {
+main .half-sun .view3 .top .heading {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-main .view3 .heading h1 {
+main .half-sun .view3 .top .heading h1 {
   font-family: "light";
   font-size: 1.5rem;
 }
-main .view3 .heading p {
+main .half-sun .view3 .top .heading p {
   color: #7b7d82;
   font-size: 1.2rem;
   width: 80%;
 }
-main .view3 .text {
+main .half-sun .view3 .top .text {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: space-evenly;
   gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.5fr;
 }
-main .view3 .text .toparea {
+main .half-sun .view3 .top .text .points1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .half-sun .view3 .top .text .points1 h1 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+main .half-sun .view3 .top .text .points1 p {
+  color: #7b7d82;
+}
+main .half-sun .view3 .top .text .points2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .half-sun .view3 .top .text .points2 h1 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+main .half-sun .view3 .top .text .points2 p {
+  color: #7b7d82;
+}
+main .half-sun .view3 .top .text .points3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .half-sun .view3 .top .text .points3 h1 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+main .half-sun .view3 .top .text .points3 p {
+  color: #7b7d82;
+}
+main .half-sun .view3 .top .text .points4 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .half-sun .view3 .top .text .points4 h1 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+main .half-sun .view3 .top .text .points4 p {
+  color: #7b7d82;
+}
+main .half-sun .view3 .top .text .point5 p {
+  font-size: 1.3rem;
+}
+main .half-sun .view3 .bottom img {
   width: 100%;
-  display: flex;
-  padding: 1rem 0rem;
-  justify-content: space-around;
-  gap: 1.5rem;
 }
-main .view3 .text .toparea .points1 {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-main .view3 .text .toparea .points1 h1 {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-main .view3 .text .toparea .points1 p {
-  font-size: 1.2rem;
-}
-main .view3 .text .toparea .points2 {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-main .view3 .text .toparea .points2 h1 {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-main .view3 .text .toparea .points2 p {
-  font-size: 1.2rem;
-}
-main .view3 .text .bottomarea {
+main .half-sun .view3 .card2 {
   width: 100%;
-  display: flex;
-  padding: 1rem 0rem;
-  justify-content: space-around;
-  gap: 1.5rem;
 }
-main .view3 .text .bottomarea .points3 {
+main .half-sun .view3 .card2 .tops .titles {
+  display: flex;
+  width: 100%;
+}
+main .half-sun .view3 .card2 .tops .titles p {
+  text-transform: uppercase;
+  width: 1.3rem;
+  color: #7b7d82;
+}
+main .half-sun .view3 .card2 .tops .headings h1 {
+  font-size: 2rem;
+  font-family: "light";
+}
+main .half-sun .view3 .card2 .bottom img {
+  width: 100%;
+}
+main .half-sun .view4 {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+main .half-sun .view4 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .half-sun .view4 .top .title p {
+  text-transform: uppercase;
+  color: #7b7d82;
+}
+main .half-sun .view4 .top .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main .half-sun .view4 .top .heading h1 {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "light";
+}
+main .half-sun .view4 .top .heading p {
+  color: #7b7d82;
+  font-size: 1.2rem;
+}
+main .half-sun .view4 .bottom img {
+  width: 100%;
+}
+main .half-sun .view5 {
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .half-sun .view5 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .half-sun .view5 .top .title p {
+  text-transform: uppercase;
+  color: #7b7d82;
+}
+main .half-sun .view5 .top .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main .half-sun .view5 .top .heading h1 {
+  font-family: "light";
+}
+main .half-sun .view5 .top .heading p {
+  font-size: 1.2rem;
+  color: #7b7d82;
+}
+main .half-sun .view5 .bottom img {
+  width: 100%;
+}
+main .view6 {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+}
+main .view6 .title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+main .view6 .title .headline {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #7b7d82;
+}
+main .view6 .title .mainname h1 {
+  font-family: "light";
+}
+main .view6 .middle {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-main .view3 .text .bottomarea .points3 h1 {
-  font-size: 1.5rem;
-  font-weight: 400;
+main .view6 .middle .block1,
+main .view6 .middle .block2 {
+  background-color: #0E0F10;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid #303031;
 }
-main .view3 .text .bottomarea .points3 p {
+main .view6 .middle .block1 .title p,
+main .view6 .middle .block2 .title p {
+  text-transform: uppercase;
   font-size: 1.2rem;
+  color: #7b7d82;
 }
-main .view3 .text .bottomarea .points4 {
+main .view6 .middle .block1 .title h1,
+main .view6 .middle .block2 .title h1 {
+  font-size: 1.5rem;
+}
+main .view6 .middle .block1 .bottom img,
+main .view6 .middle .block2 .bottom img {
+  width: 100%;
+}
+main .view6 .middle .bottom {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-main .view3 .text .bottomarea .points4 h1 {
-  font-size: 1.5rem;
-  font-weight: 400;
+main .view6 .middle .bottom .top {
+  display: flex;
+  flex-direction: column;
+  background-color: #0E0F10;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid #303031;
+  gap: 1rem;
 }
-main .view3 .text .bottomarea .points4 p {
+main .view6 .middle .bottom .top p {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #7b7d82;
+}
+main .view6 .middle .bottom .top h1 {
+  font-size: 1.5rem;
+}
+main .view6 .middle .bottom .bottom {
+  display: flex;
+  flex-direction: column;
+  background-color: #0E0F10;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid #303031;
+  gap: 1rem;
+}
+main .view6 .middle .bottom .bottom .btitle {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #7b7d82;
+}
+main .view6 .middle .bottom .bottom .list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   font-size: 1.2rem;
+  font-weight: 500;
+}
+main .view7 {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+  gap: 2rem;
+}
+main .view7 .top {
+  display: flex;
+  justify-content: center;
+}
+main .view7 .top img {
+  width: 7rem;
+  margin-top: 5rem;
+}
+main .view7 .middle {
+  color: white;
+  text-align: center;
+}
+main .view7 .middle h1 {
+  font-family: "light";
+}
+main .view7 .bottom {
+  display: flex;
+  justify-content: center;
+}
+main .view7 .bottom button {
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: none;
+  background-color: #303031;
+  color: white;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   main .bg-img {
     background: url(Image/Image2.svg);
     background-repeat: no-repeat;
@@ -275,7 +498,8 @@ main .view3 .text .bottomarea .points4 p {
   main header .logo p {
     font-size: 2rem;
   }
-  main header .mid, main header .bottom {
+  main header .mid,
+  main header .bottom {
     display: block;
   }
   main header .mid {
@@ -350,6 +574,128 @@ main .view3 .text .bottomarea .points4 p {
   }
   main .view2 .bottom-last {
     width: 65%;
+  }
+  main .half-sun .side {
+    display: block;
+    overflow: hidden;
+  }
+  main .half-sun .side img {
+    position: absolute;
+    width: 100%;
+    right: -70%;
+    transform: translateY(-50%);
+  }
+  main .half-sun .left-side {
+    display: block;
+    overflow: hidden;
+  }
+  main .half-sun .left-side img {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-45%);
+    left: -70%;
+  }
+  main .half-sun .view3,
+  main .half-sun .view4,
+  main .half-sun .view5 {
+    flex-direction: row;
+    padding: 2rem;
+    margin: 0rem 8rem;
+  }
+  main .half-sun .view3 .top,
+  main .half-sun .view3 .bottom,
+  main .half-sun .view4 .top,
+  main .half-sun .view4 .bottom,
+  main .half-sun .view5 .top,
+  main .half-sun .view5 .bottom {
+    width: 50%;
+  }
+  main .half-sun .view3 .top .title p,
+  main .half-sun .view4 .top .title p,
+  main .half-sun .view5 .top .title p {
+    font-size: 1.5rem;
+  }
+  main .half-sun .view3 .top .heading h1,
+  main .half-sun .view4 .top .heading h1,
+  main .half-sun .view5 .top .heading h1 {
+    font-size: 5rem;
+  }
+  main .half-sun .view3 .top .heading p,
+  main .half-sun .view4 .top .heading p,
+  main .half-sun .view5 .top .heading p {
+    font-size: 1.5rem;
+  }
+  main .half-sun .view4 {
+    flex-direction: row-reverse;
+  }
+  main .half-sun .view4 .top {
+    justify-content: center;
+  }
+  main .half-sun .view5 .top {
+    justify-content: center;
+  }
+  main .view6 {
+    margin: 0rem 8rem;
+  }
+  main .view6 .title h1 {
+    font-size: 3rem;
+    font-family: "light";
+  }
+  main .view6 .middle {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  main .view6 .middle .block1, main .view6 .middle .block2 {
+    padding: 2rem;
+  }
+  main .view6 .middle .block1 .title h1, main .view6 .middle .block2 .title h1 {
+    font-size: 2rem;
+  }
+  main .view6 .middle .bottom {
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+  main .view6 .middle .bottom .top {
+    padding: 2rem;
+    height: 50%;
+  }
+  main .view6 .middle .bottom .top h1 {
+    font-size: 2rem;
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  main .view6 .middle .bottom .bottom {
+    padding: 2rem;
+    height: 50%;
+  }
+  main .view6 .middle .bottom .bottom .list {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  main .view6 .middle .bottom .bottom .list p {
+    font-size: 1.5rem;
+  }
+  main .view7 {
+    background: url(Image/image14.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    background-size: 10%;
+    animation: mysun 0s linear forwards 1;
+    padding: 13rem;
+  }
+  main .view7 .top img {
+    width: 10rem;
+  }
+  main .view7 .middle h1 {
+    font-size: 4rem;
+    color: #0A0A0B;
+  }
+  main .view7 .bottom button {
+    padding: 1.5rem 2.5rem;
+    font-size: 1rem;
+    background-color: #0A0A0B;
   }
 }
 @keyframes myanimation {
